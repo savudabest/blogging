@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Savva Mekerishvili</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#travel">Travel</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#environment">Environment</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#aboutMe">About Me</a></li>
+      </ul>
+    </div>
+
+</nav>
+  
+<div class="container">
+	
+  <div class="page-header" id="travel">
+  		<h2 class="text-capitalize">places must visit</h2>
+  </div>
+    
+  	<center>
+  		<div  class="travel_mainDiv"> 
+  			<img class="img-responsive"  src="data:image/jpeg;base64,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">
+
+  			<h4 class="text-capitalize"><kbd>DE MOON</kbd></h4>
+  			
+  			<hr >
+
+  			<h5 class="text-success text-left text-capitalize" >i had visited in dec 2018</h5>
+
+  			<p class="text-muted text-left" >really coll place needs a little color but other than that really fun you can jump as high as a kangaroo or even higher i also met some new creatures big heads coutless arms they said something about destoing humanity pretty sure nothing important. </p>
+  		</div>
+  	</center>
+
+<br><br>
+
+  	<center>
+  		<div  class="travel_mainDiv"> 
+  			<img class="img-responsive"  src="travel2.jpeg">
+
+  			<h4 class="text-capitalize"><kbd>jantar mantar - jaipur</kbd></h4>
+  			
+  			<hr >
+
+  			<h5 class="text-success text-left text-capitalize" >i had visited in feb 2019</h5>
+
+  			<p class="text-muted text-left" >It's a wonderful place. Must visit this place. Must haired tour guide so it will be batter to under stand all the things. It is a beautifully maintained small complex with yellow painted walls. It's a historical site famous among tourists. It contains a number of different devices that were used to measure time in different eras in the Indian history. It has a nominal ticket price of ₹15 for Indians but about ₹225-250 for foreigners. Nice place to visit. We had an incredible experience visiting this observatory and seeing the accuracy of the astronomical instruments built around 300 years ago</p>
+  		</div>
+  	</center>
+
+<br><br>
+ 
+  	<center>
+  		<div  class="travel_mainDiv"> 
+  			<img class="img-responsive"  src="data:image/jpeg;base64,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">
+
+  			<h4 class="text-capitalize"><kbd>bathroonm</kbd></h4>
+  			
+  			<hr >
+
+  			<h5 class="text-success text-left text-capitalize" >i visited a bathroom about a 5 or 4 years ago</h5>
+
+  			<p class="text-muted text-left" >this is something very impressive only few people have it, it is called a bathroom it has a toilet a shower and a sink, can you imagine having a toilet? people with them are really really and i mean really lucky.</p>
+  		</div>
+  	</center>
+
+	<div class="page-header" id="movies">
+  		<h2 class="text-capitalize">review on the movies</h2>
+  </div>
+
+<div class="bg-primary movie_head" data-toggle="collapse" data-target="#avengers_endgame" >
+    <span class="glyphicon glyphicon-film" ></span> Avengers Endgame<i class="fa fa-sort-desc" ></i>
+  </div>
+
+  <div id="avengers_endgame" class="collapse">
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+	  		<img src="movie1.jpeg" class="img-responsive img-thumbnail"> 
+	  </div>
+
+	  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text" >
+		  <h5 class="text-success text-left text-capitalize">Excellent film to culminate MCU ride 
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+      </h5>
+		  <p>good movie good.</p>
+	  </div>
+  
+  </div>
+
+  <div class="bg-primary movie_head" data-toggle="collapse" data-target="#the_lion_king" >
+    <span class="glyphicon glyphicon-film" ></span> The Lion King<i class="fa fa-sort-desc" ></i>
+  </div>
+
+  <div id="the_lion_king" class="collapse">
+	 
+   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+  		<img src="movie2.jpg" class="img-responsive img-thumbnail" >
+  	</div>
+
+  	<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text" >
+	   <h5 class="text-success text-left text-capitalize">nice for one time 
+       <span class="glyphicon glyphicon-star" ></span>
+       <span class="glyphicon glyphicon-star" ></span>
+       <span class="glyphicon glyphicon-star" ></span>
+     </h5>
+	   <p>good movie good</p>
+  	</div>
+  </div>
+
+
+
+  <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#Frozen_2" >
+    <span class="glyphicon glyphicon-film" ></span> Frozen 2<i class="fa fa-sort-desc" ></i>
+  </div>
+
+  <div id="Frozen_2" class="collapse">
+	 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+  		<img src="movie4.jpeg" class="img-responsive img-thumbnail" >
+  	</div>
+
+  	<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text" >
+  	  <h5 class="text-success text-left text-capitalize">Beautiful, Enchanting and Layered
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+      </h5>
+  	  <p>good movie good</p>
+  	</div>
+  </div>
+
+
+  <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="environment">
+      <h2 class="text-capitalize ">news about environment</h2>
+  </div>
+
+  <ul class="list-group">
+
+    <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li" >
+      <h4>LEGO plans to find replacement material for bricks by 2030</h4>
+      <img src="e1.jpeg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12" >
+      <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12" >In an effort to be more environmentally responsible, LEGO have said they aim to stop manufacturing bricks made of plastic resin and are considering other options, which could include hemp. According to Telegraph World, the company makes 60 billion blocks a year. While LEGO want to replace the harmful plastic used in their products, they also require the new material to meet the high standards that allow the blocks to work as they always have, especially with the effective “clicking” together is a key aspect of the iconic coloured block.</p>
+     </li>
+
+    <li class="list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li"  >
+     <h4   >Amazon deforestation and number of fires show summer of 2019 not a 'normal' year</h4>
+     <img src="e3.jpeg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12" >
+     <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12" >The perceived scale of the Amazon blazes received global attention this summer. However, international concerns raised at the time were countered by the Brazilian Government, which claimed the fire situation in August was 'normal' and 'below the historical average'.An international team of scientists writing in the journal Global Change Biology say the number of active fires in August was actually three times higher than in 2018 and the highest number since 2010.</p>
+    </li>
+
+ 
+</ul>
+
+  <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="books">
+      <h2 class="text-capitalize ">Books</h2>
+  </div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    
+  <h3>Bill Gates</h3>
+  <h4>
+    <mark  class="header_entrepreneur">
+    <i>
+      <sup><i class="fa fa-quote-left"></i></sup>
+      Reading is still the main way that I both learn new things and test my understanding.
+      <sup><i class="fa fa-quote-right"></i></sup>
+      </i>
+    </mark>
+  </h4>
+
+</div>
+
+  <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h2 class="text-capitalize ">List of Books</h2>
+  </div>
+
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book"  data-toggle="modal" data-target="#First_Space_Encyclopaedia">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/41R3s6s993S._SX331_BO1,204,203,200_.jpg" class="img-responsive">
+    <hr >
+    <p class="text-primary">the legend of the dave the villeger</p>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="First_Space_Encyclopaedia">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content" >
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">the legend of the dave the villeger</h4>
+        </div>
+        
+        <div class="modal-body">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/41R3s6s993S._SX331_BO1,204,203,200_.jpg" class="img-responsive img_modal">
+          <p class="p_modal">the legend of the dave the villeger is amazing advanture book with giant monsters magical elves and withers from hell there are even robots and dave is just a villager who is supposed to be a farmer but wants to have a life full of advantures so he goes on one making many friend spidroth the daughter of herobrine the bad guy carl the creeper a golden robot and porkins.<br>
+          <a href="https://www.amazon.com/Legend-Dave-Villager-Unofficial-Minecraft/dp/1086927788/ref=sr_1_3?dchild=1&keywords=the+legends+of+dave+the+villegar&qid=1626707306&sr=8-3-spell"><b>amazon link</b></a>
+           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book"  data-toggle="modal" data-target="#Man_on_the_Moon">
+    <img src="s2.jpg" class="img-responsive">
+    <hr >
+   <p class="text-primary">Man on the Moon (Picture Puffins)</p>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="Man_on_the_Moon">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content"  >
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Man on the Moon </h4>
+        </div>
+        
+        <div class="modal-body">
+          <img src="s2.jpg" class="img-responsive img_modal">
+          <p class="p_modal">It was 1969 and no one had ever set foot on the moon. Some said it couldn't be done. But astronauts Mike Collins, Buzz Aldrin, and Neil Armstrong were going to try . . . Here in picture book format is the amazing true story of the first moon landing, when a man set foot on an unexplored world and showed us that the boundaries of our world were limitless."[A] perfect introduction to space, the space program, and exploration. Thrilling!" (Kirkus Reviews)"The milestone event [is] a great idea for a picture book!" <br>
+          <a href="https://www.amazon.in/Moon-Picture-Puffins-Anastasia-Suen/dp/0140565981/ref=sr_1_2_sspa?crid=176WU3JFDK2JP&keywords=books+on+space+for+kids&qid=1575444723&sprefix=books+on%2Caps%2C285&sr=8-2-spons&psc=1&smid=A3H3WE9M6NY1KV&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTVBPRUUyMlg5TU9XJmVuY3J5cHRlZElkPUEwMjUyOTM3MU9XVklaVFdUMk9GUSZlbmNyeXB0ZWRBZElkPUEwNDAwNTE1T1JZSVhWWDM3NTlMJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="><b>BEST BUY LINK</b></a>
+           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book"  data-toggle="modal" data-target="#Space_Encyclopaedia">
+    <img src="s3.jpg" class="img-responsive">
+    <hr >
+    <p class="text-primary">Space Encyclopaedia</p>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="Space_Encyclopaedia">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content"  >
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Space Encyclopaedia</h4>
+        </div>
+        
+        <div class="modal-body">
+          <img src="s3.jpg" class="img-responsive img_modal">
+          <p class="p_modal">The universe is bigger than you can ever imagine and it is full of fascinating facts that will astound you! This Space. Encyclopaedia is your guide to the infinite wonders of outer space. Browse through the pages and know more about galaxies, planets, stars and much, much more!.<br>
+          <a href="https://www.amazon.in/Space-Encyclopaedia-Books-Editorial-Team/dp/9384625957/ref=sr_1_7?crid=176WU3JFDK2JP&keywords=books+on+space+for+kids&qid=1575444723&sprefix=books+on%2Caps%2C285&sr=8-7"><b>BEST BUY LINK</b></a>
+           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book"  data-toggle="modal" data-target="#No_Place_Like_Space">
+    <img src="s4.jpg" class="img-responsive">
+    <hr >
+    <p class="text-primary">There's No Place Like Space</p>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="No_Place_Like_Space">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content"  >
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">There's No Place Like Space</h4>
+        </div>
+        
+        <div class="modal-body">
+          <img src="s4.jpg" class="img-responsive img_modal">
+          <p class="p_modal">Au revoir, Pluto! In this beloved revised classic, beginning readers and budding astronomers are launched on a wild trip to visit the eight planets in our solar system (per the International Astronomical Union’s 2006 decision to downgrade Pluto from a planet to a dwarf planet), along with the Cat in the Hat, Thing One, Thing Two, Dick, and Sally. It’s a reading adventure that’s out of this world!<br>
+          <a href="https://www.amazon.in/Theres-No-Place-Like-Space/dp/0679891153/ref=sr_1_9?crid=176WU3JFDK2JP&keywords=books+on+space+for+kids&qid=1575444723&sprefix=books+on%2Caps%2C285&sr=8-9"><b>BEST BUY LINK</b></a>
+           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section id="contact">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.54322994407!2d-71.11873978467874!3d42.3309402791888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3799973208805%3A0xb9a6e9237773df80!2s12%20Juniper%20St%2C%20Brookline%2C%20MA%2002445!5e0!3m2!1sen!2sus!4v1626384870100!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+<hr style="width: 100%;">
+<img src="" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+<h3>Savva mekerishvili</h3>
+
+        <div class="contact_1" >
+
+           <a href="mailto:my@gmail.com?Subject=Hi">
+               <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;savudabest@gmail.com</h5>
+            </a> 
+
+           <a href="#"> 
+               <h5><i class="fa fa-instagram" ></i>&nbsp;&nbsp;myinstagramid</h5>
+            </a> 
+        </div>
+
+</section>
+
+  </div>
+
+
+</body>
+</html>
